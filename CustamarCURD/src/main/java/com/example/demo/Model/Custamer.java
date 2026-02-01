@@ -5,7 +5,7 @@ import jakarta.persistence.Id;
 
 @Entity
 public class Custamer {
-	@Id    //Primay key
+	@Id    
 	private Integer id;
 	private String name;
 	private String mob;
@@ -14,7 +14,6 @@ public class Custamer {
 	
 	public Custamer() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 
 	public Custamer(Integer id, String name, String mob, String address, Float total) {
