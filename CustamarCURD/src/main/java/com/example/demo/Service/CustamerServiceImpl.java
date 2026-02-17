@@ -26,12 +26,12 @@ public class CustamerServiceImpl implements CustamerService {
 	@Override
 	public void add(Custamer custamer) {
 		// TODO Auto-generated method stub
-		Integer id = custamer.getId();
-		Custamer temp = Search(id);
-		if (id == null || id <= 0)
-			throw new Invalidid("ID must be greater than zero");
-		if (cr.existsById(id))
-			throw new Invalidid("ID already exists");
+		//Integer id = custamer.getId();
+		//Custamer temp = Search(id);
+//		if (id == null || id <= 0)
+//			throw new Invalidid("ID must be greater than zero");
+//		if (cr.existsById(id))
+//			throw new Invalidid("ID already exists");
 
 		String name=custamer.getName().trim();
 		List<Custamer> nm=cr.findByName(name);

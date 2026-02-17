@@ -19,7 +19,7 @@ import com.example.demo.Model.Custamer;
 import com.example.demo.Service.CustamerService;
 
 @RestController
-@CrossOrigin(origins = "*")
+//@CrossOrigin(origins = "*")
 public class CustomerController {
 
 	@Autowired
